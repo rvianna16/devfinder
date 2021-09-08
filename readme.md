@@ -1,6 +1,6 @@
 ## :bulb: Dev Finder
 
-## Buscador de usuário no github. È possível digiar o perfil de um usuário, para buscar e listar algumas informações do perfil desejado.
+## Buscador de usuário no github. È possível buscar o perfil de um usuário, e listar algumas informações do perfil desejado.
 
 <br>
 
