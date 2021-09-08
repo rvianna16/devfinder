@@ -1,0 +1,13 @@
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content .theme-content {
+  display: flex;
+  column-gap: 10px;
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+}

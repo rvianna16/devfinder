@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Devfinder - Search github's profile</title>
+  </head>
+  <body data-theme="light">
+    <header>
+      <div class="header-content container">
+        <h1>devfinder</h1>
+        <div class="theme-content">
+          <p>Dark</p>
+          <i class="fas fa-moon"></i>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="input-search">
+        <i class="fas fa-search"></i>
+        <form id="searchUser" action="">
+          <label for="search" class="sr-only">Search GitHub username</label>
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Search Github username..."
+            autocomplete="off"
+            required
+          />
+        </form>
+        <button type="submit" form="searchUser" class="btn-search">
+          Search
+        </button>
+      </section>
+      <span class="error">User not found :(</span>
+      <section class="profile-box">
+        <img class="profile-image" src="" alt="Profile Image" />
+
+        <div class="profile-info">
+          <h2 class="profile-name"></h2>
+          <p class="profile-login"></p>
+          <p class="profile-joined"></p>
+        </div>
+        <p class="profile-bio"></p>
+
+        <div class="profile-stats">
+          <div class="profile-repos">
+            <h3>Repos</h3>
+            <p class="repos"></p>
+          </div>
+          <div class="profile-followers">
+            <h3>Followers</h3>
+            <p class="followers"></p>
+          </div>
+          <div class="profile-following">
+            <h3>Following</h3>
+            <p class="following"></p>
+          </div>
+        </div>
+        <div class="profile-socials">
+          <div class="profile-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="location"></p>
+          </div>
+          <div class="profile-twitter">
+            <i class="fab fa-twitter"></i>
+            <p class="twitter"></p>
+          </div>
+          <div class="profile-blog">
+            <i class="fas fa-link"></i>
+            <p class="blog"></p>
+          </div>
+          <div class="profile-company">
+            <i class="fas fa-building"></i>
+            <p class="company"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/0cf55be366.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

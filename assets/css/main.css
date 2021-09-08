@@ -1,0 +1,183 @@
+section.input-search {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 0.6rem;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+  height: 50px;
+}
+
+.input-search .fa-search {
+  color: var(--blue);
+  font-size: 1.5rem;
+  padding: 0 1rem 0 1.5rem;
+}
+
+.input-search input {
+  caret-color: var(--btn);
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.input-search .btn-search {
+  background-color: var(--btn);
+  border-radius: 0.6rem;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0 1.2rem;
+  margin: 0 0.5rem;
+  height: 40px;
+  float: right;
+}
+
+span.error {
+  display: none;
+  margin-top: 2rem;
+}
+
+/* profile section */
+
+.profile-box {
+  display: none;
+  background-color: var(--white);
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  padding: 1.55rem;
+  margin-top: 1.5rem;
+}
+
+.profile-image {
+  float: left;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  position: relative;
+  margin-left: 150px;
+}
+
+.profile-login {
+  color: var(--blue);
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+.profile-joined {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  opacity: 0.8;
+}
+
+.profile-bio {
+  margin-left: 150px;
+  padding: 1.5rem 0;
+}
+
+.profile-stats {
+  display: flex;
+  margin-left: 150px;
+  background-color: var(--bg-stats);
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+}
+
+.profile-followers {
+  margin: 0 15%;
+}
+
+.profile-repos h3,
+.profile-followers h3,
+.profile-following h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  opacity: 0.4;
+}
+
+.profile-repos p,
+.profile-followers p,
+.profile-following p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+
+.profile-socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  margin-left: 150px;
+  padding: 2rem 0 1rem 0;
+}
+
+.profile-location,
+.profile-twitter,
+.profile-blog,
+.profile-company {
+  color: #4f689a;
+  display: flex;
+  align-items: center;
+}
+
+.profile-location p,
+.profile-twitter p,
+.profile-blog p,
+.profile-company p {
+  margin-left: 10px;
+}
+
+.null {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+  .profile-info {
+    margin-top: 15px;
+  }
+
+  .profile-joined {
+    position: initial;
+  }
+
+  .profile-bio,
+  .profile-stats,
+  .profile-socials {
+    margin: 0;
+  }
+
+  .profile-bio {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profile-info {
+    margin-top: 30px;
+  }
+
+  .profile-stats {
+    justify-content: space-around;
+  }
+
+  .profile-socials {
+    display: block;
+  }
+
+  .profile-location,
+  .profile-twitter,
+  .profile-blog {
+    margin-bottom: 15px;
+  }
+}

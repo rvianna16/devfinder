@@ -1,0 +1,28 @@
+body[data-theme='dark'] {
+  background-color: var(--bg-dark);
+  color: var(--white);
+}
+
+[data-theme='dark'] .input-search,
+[data-theme='dark'] .input-search input,
+[data-theme='dark'] .input-search input::placeholder,
+[data-theme='dark'] .profile-box {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+[data-theme='dark'] .input-search .fa-search,
+[data-theme='dark'] .profile-login {
+  color: var(--blue-dark);
+}
+
+[data-theme='dark'] .profile-stats {
+  background-color: var(--bg-stats-dark);
+}
+
+[data-theme='dark'] .profile-location,
+[data-theme='dark'] .profile-twitter,
+[data-theme='dark'] .profile-blog,
+[data-theme='dark'] .profile-company {
+  color: var(--white);
+}

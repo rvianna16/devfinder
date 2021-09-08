@@ -1,0 +1,35 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(main.css);
+@import url(dark.css);
+
+:root {
+  --bg-light: #f5f8ff;
+  --bg-stats: #f5f8ff;
+  --white: #fefefe;
+  --blue: #7ba7d7;
+  --btn: #0077fa;
+
+  /* Dark Colors */
+  --bg-dark: #141c2f;
+  --bg-stats-dark: #141c31;
+  --dark: #1f2a48;
+  --blue-dark: #275187;
+}
+
+body {
+  background-color: var(--bg-light);
+  font-family: 'Courier Prime', monospace;
+  margin-top: 3rem;
+}
+
+.container {
+  width: min(90vw, 800px);
+  margin: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+}
